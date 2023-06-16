@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDos List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Todos List</h1>
+    <button id="mode-selector" onclick="darkMode()">Dark Mode</button>
+
+    <div class="todos-tasks">
+        <div class="task">
+            <h2>Title</h2>
+            <input type="text" placeholder="Task Title" />
+        </div>
+        <div class="task">
+            <h2>Add a task to the list</h2>
+            <input type="text" placeholder="Description"/>
+        </div>
+        <div class="task-action">
+            <Button class="task-action-button">Add to Task List</Button>
+            <Button class="task-action-button">Clear List</Button>
+        </div>
+    </div>
+
+    <div class="todo-items">
+        <h1>Your Tasks</h1>
+        <table>
+            <thead>
+                <th>S.No.</th>
+                <th>Task Title</th>
+                <th>Task Description</th>
+                <th>Actions</th>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>first task</td>
+                    <td>To be completed today</td>
+                    <td><button class="task-action-button"> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Second task</td>
+                    <td>To be completed tommorow</td>
+                    <td><button class="task-action-button"> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
